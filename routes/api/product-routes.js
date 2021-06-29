@@ -28,7 +28,7 @@ router.get('/', (req, res) => {
 });
 
 // get one product
-router.get('/:id', (req, res) => {
+router.get('/:id', async (req, res) => {
   try {
     const singleProduct = await Product.findOne({
       where: {
@@ -60,7 +60,7 @@ router.get('/:id', (req, res) => {
 
 
 // create new product
-router.post('/', (req, res) => {
+router.post('/', async (req, res) => {
   try {
     const newProduct = await Product.create({
       product_name : req.body.product_name,
@@ -138,7 +138,7 @@ router.put('/:id', (req, res) => {
     });
 });
 
-router.delete('/:id', (req, res) => {
+router.delete('/:id', async (req, res) => {
     // delete one product by its `id` value
   try {
     const deadProduct = await Product.destroy({
