@@ -1,4 +1,4 @@
-# E-Commerce Backend
+
 
 This is a small backend app used for controlling inventory in a E-Commerce store. By using Insomnia and the app's API routes: You can add or delete items from inventory, you can add product categories and control the tags associated with all products. 
 
@@ -18,7 +18,7 @@ This is a small backend app used for controlling inventory in a E-Commerce store
   
 ## Demo
 
-Insert gif or link to demo
+[Demo Video on YouTube](https://youtu.be/0g7Qzjo7xT4)
 
   
 ## Installation 
